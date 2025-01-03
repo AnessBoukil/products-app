@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-no-undef */
-import "./App.css";
 import { Link, BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Products from "./components/Products";
@@ -22,7 +21,7 @@ function App() {
             <Link
               onClick={() => setCurrentRoute("home")}
               className={
-                currentRoute == "home"
+                currentRoute === "home"
                   ? "btn btn-info ms-1"
                   : "btn btn-outline-info ms-1"
               }
@@ -35,7 +34,7 @@ function App() {
             <Link
               onClick={() => setCurrentRoute("products")}
               className={
-                currentRoute == "products"
+                currentRoute === "products"
                   ? "btn btn-info ms-1"
                   : "btn btn-outline-info ms-1"
               }
